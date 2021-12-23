@@ -1,4 +1,4 @@
-# 自己写PCA的算法
+# 自己写PCA的算法和CNN模型的测试
 import os
 import datetime
 import numpy as np
