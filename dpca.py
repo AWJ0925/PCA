@@ -116,6 +116,7 @@ def image_2D2DPCA(images, u, uu):
     return new_images
 
 
+# Testing
 if __name__ == '__main__':
     (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
     # 2DPCA
@@ -138,8 +139,9 @@ if __name__ == '__main__':
     # Compile Model
     cnnModel.compile(optimizer=tf.optimizers.Adam(learning_rate=0.0001),
                      loss='sparse_categorical_crossentropy',
-                    metrics=['accuracy'])
+                     metrics=['accuracy'])
     cnnModel.summary()
+    # Training
     start_time = datetime.datetime.now()
     cnn_history = cnnModel.fit(x_train_reduction, y_train,
                                batch_size=128,
