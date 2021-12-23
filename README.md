@@ -1,1 +1,2 @@
 # PCA
+使用封装的PCA和写得PCA算法和经典的CNN处理MNIST数据集
